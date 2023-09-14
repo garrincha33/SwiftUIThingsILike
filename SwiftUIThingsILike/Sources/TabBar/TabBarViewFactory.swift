@@ -11,7 +11,7 @@ struct TabBarViewFactory: TabBarViewFactoryType {
     func make() -> some View {
         TabView {
             ForEach(Topic.allCases, id: \.self) { topic in
-                TopicView(topic: topic)
+                TopicViewFactory().make(topic: topic)
                     .tabItem {
                         Text(topic.rawValue)
                     }
@@ -19,5 +19,6 @@ struct TabBarViewFactory: TabBarViewFactoryType {
         }
     }
 }
+
 
 
