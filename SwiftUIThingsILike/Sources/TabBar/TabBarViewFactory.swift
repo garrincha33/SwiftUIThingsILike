@@ -19,6 +19,3 @@ struct TabBarViewFactory: TabBarViewFactoryType {
         }
     }
 }
-
-
-
