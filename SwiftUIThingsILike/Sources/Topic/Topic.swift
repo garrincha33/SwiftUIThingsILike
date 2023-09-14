@@ -8,7 +8,7 @@
 import Foundation
 
 enum Topic: String, CaseIterable {
-    case topic1 = "Topic 1"
-    case topic2 = "Topic 2"
-    // ... add other topics as needed
+    case nature = "Nature"
+    case technology = "Technology"
+    case architecture = "Architecture"
 }

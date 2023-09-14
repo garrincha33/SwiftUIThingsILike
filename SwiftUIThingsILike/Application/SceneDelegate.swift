@@ -9,10 +9,10 @@ import UIKit
 import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
     var window: UIWindow?
-    var appCoordinator: (any AppCoordinatorType)?
-
+    var appCoordinator: AppCoordinator?
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -20,8 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
         
-        let tabBarCoordinator = TabBarCoordinator(window: window)
-        appCoordinator = AppCoordinator(window: window, tabBarCoordinator: tabBarCoordinator)
+        let tabBarFactory = TabBarViewFactory()
+        let tabBarCoordinator = TabBarCoordinator(tabBarFactory: tabBarFactory)
+        let tabBarRouter = TabBarRouter(tabBarCoordinator: tabBarCoordinator)
+        
+        appCoordinator = AppCoordinator(router: tabBarRouter)
         appCoordinator?.start()
+        
+        window.rootViewController = UIHostingController(rootView: appCoordinator?.rootView)
     }
+    
 }

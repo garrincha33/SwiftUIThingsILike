@@ -8,12 +8,12 @@
 import SwiftUI
 
 protocol TopicViewFactoryType {
-    associatedtype TopicViewType: View
-    func make(topic: Topic) -> TopicViewType
+    func make(topic: Topic) -> AnyView
 }
 
 struct TopicViewFactory: TopicViewFactoryType {
-    func make(topic: Topic) -> some View {
-        TopicView(topic: topic)
+    func make(topic: Topic) -> AnyView {
+        AnyView(TopicView(topic: topic))
     }
 }
+
