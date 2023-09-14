@@ -13,12 +13,16 @@
 		823DCBFC2AB337F300C03EBA /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCBFB2AB337F300C03EBA /* TabBarCoordinator.swift */; };
 		823DCBFE2AB33B4D00C03EBA /* TabBarCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCBFD2AB33B4D00C03EBA /* TabBarCoordinatorType.swift */; };
 		823DCC002AB33C6800C03EBA /* TabBarViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCBFF2AB33C6800C03EBA /* TabBarViewFactory.swift */; };
-		823DCC022AB33EE500C03EBA /* AppCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC012AB33EE500C03EBA /* AppCoordinators.swift */; };
 		823DCC052AB33F2000C03EBA /* TopicViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC042AB33F2000C03EBA /* TopicViewFactory.swift */; };
 		823DCC072AB33F3700C03EBA /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC062AB33F3700C03EBA /* TopicView.swift */; };
 		823DCC092AB33F4700C03EBA /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC082AB33F4700C03EBA /* Topic.swift */; };
 		823DCC0C2AB3413200C03EBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC0B2AB3413200C03EBA /* AppDelegate.swift */; };
 		823DCC0E2AB3414800C03EBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC0D2AB3414800C03EBA /* SceneDelegate.swift */; };
+		823DCC112AB3842700C03EBA /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC102AB3842700C03EBA /* RouterType.swift */; };
+		823DCC132AB3844000C03EBA /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC122AB3844000C03EBA /* TabBarRouter.swift */; };
+		823DCC192AB3891A00C03EBA /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC182AB3891A00C03EBA /* CoordinatorType.swift */; };
+		823DCC1B2AB3893700C03EBA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC1A2AB3893700C03EBA /* AppCoordinator.swift */; };
+		823DCC1D2AB389E100C03EBA /* TabBarViewFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC1C2AB389E100C03EBA /* TabBarViewFactoryType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +33,16 @@
 		823DCBFB2AB337F300C03EBA /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		823DCBFD2AB33B4D00C03EBA /* TabBarCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorType.swift; sourceTree = "<group>"; };
 		823DCBFF2AB33C6800C03EBA /* TabBarViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewFactory.swift; sourceTree = "<group>"; };
-		823DCC012AB33EE500C03EBA /* AppCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinators.swift; sourceTree = "<group>"; };
 		823DCC042AB33F2000C03EBA /* TopicViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicViewFactory.swift; sourceTree = "<group>"; };
 		823DCC062AB33F3700C03EBA /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
 		823DCC082AB33F4700C03EBA /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		823DCC0B2AB3413200C03EBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		823DCC0D2AB3414800C03EBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		823DCC102AB3842700C03EBA /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
+		823DCC122AB3844000C03EBA /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		823DCC182AB3891A00C03EBA /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		823DCC1A2AB3893700C03EBA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		823DCC1C2AB389E100C03EBA /* TabBarViewFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewFactoryType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,8 @@
 		823DCBF92AB3321500C03EBA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				823DCC1E2AB38D6000C03EBA /* Coordinators */,
+				823DCC0F2AB3840F00C03EBA /* Router */,
 				823DCC032AB33F1100C03EBA /* Topic */,
 				823DCBFA2AB337CD00C03EBA /* TabBar */,
 			);
@@ -96,8 +106,10 @@
 		823DCBFA2AB337CD00C03EBA /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				823DCBFB2AB337F300C03EBA /* TabBarCoordinator.swift */,
 				823DCBFD2AB33B4D00C03EBA /* TabBarCoordinatorType.swift */,
+				823DCBFB2AB337F300C03EBA /* TabBarCoordinator.swift */,
+				823DCC1C2AB389E100C03EBA /* TabBarViewFactoryType.swift */,
+				823DCC122AB3844000C03EBA /* TabBarRouter.swift */,
 				823DCBFF2AB33C6800C03EBA /* TabBarViewFactory.swift */,
 			);
 			path = TabBar;
@@ -116,11 +128,27 @@
 		823DCC0A2AB3412600C03EBA /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				823DCC012AB33EE500C03EBA /* AppCoordinators.swift */,
 				823DCC0B2AB3413200C03EBA /* AppDelegate.swift */,
 				823DCC0D2AB3414800C03EBA /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		823DCC0F2AB3840F00C03EBA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				823DCC102AB3842700C03EBA /* RouterType.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		823DCC1E2AB38D6000C03EBA /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				823DCC1A2AB3893700C03EBA /* AppCoordinator.swift */,
+				823DCC182AB3891A00C03EBA /* CoordinatorType.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,12 +223,16 @@
 			files = (
 				823DCBFE2AB33B4D00C03EBA /* TabBarCoordinatorType.swift in Sources */,
 				823DCC092AB33F4700C03EBA /* Topic.swift in Sources */,
+				823DCC1B2AB3893700C03EBA /* AppCoordinator.swift in Sources */,
+				823DCC192AB3891A00C03EBA /* CoordinatorType.swift in Sources */,
+				823DCC112AB3842700C03EBA /* RouterType.swift in Sources */,
 				823DCC002AB33C6800C03EBA /* TabBarViewFactory.swift in Sources */,
 				823DCBEC2AB331F700C03EBA /* SwiftUIThingsILikeApp.swift in Sources */,
 				823DCC072AB33F3700C03EBA /* TopicView.swift in Sources */,
+				823DCC132AB3844000C03EBA /* TabBarRouter.swift in Sources */,
+				823DCC1D2AB389E100C03EBA /* TabBarViewFactoryType.swift in Sources */,
 				823DCC052AB33F2000C03EBA /* TopicViewFactory.swift in Sources */,
 				823DCC0E2AB3414800C03EBA /* SceneDelegate.swift in Sources */,
-				823DCC022AB33EE500C03EBA /* AppCoordinators.swift in Sources */,
 				823DCC0C2AB3413200C03EBA /* AppDelegate.swift in Sources */,
 				823DCBFC2AB337F300C03EBA /* TabBarCoordinator.swift in Sources */,
 			);

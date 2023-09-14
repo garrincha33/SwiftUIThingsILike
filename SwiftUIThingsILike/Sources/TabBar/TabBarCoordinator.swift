@@ -7,21 +7,19 @@
 
 import SwiftUI
 
-protocol TabBarCoordinatorType: ObservableObject {
-    var rootView: AnyView? { get set }
-    func start()
-}
 
+class TabBarCoordinator<Factory: TabBarViewFactoryType>: TabBarCoordinatorType {
+    private let tabBarFactory: Factory
 
-final class TabBarCoordinator: ObservableObject, TabBarCoordinatorType {
-    let window: UIWindow
-    @Published var rootView: AnyView?
-    
-    init(window: UIWindow) {
-        self.window = window
+    init(tabBarFactory: Factory) {
+        self.tabBarFactory = tabBarFactory
     }
-    
+
+    private(set) var rootView: AnyView?
+
     func start() {
-        rootView = AnyView(TabBarViewFactory().make())
+        rootView = AnyView(tabBarFactory.make())
     }
 }
+
+

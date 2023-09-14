@@ -10,17 +10,15 @@ import SwiftUI
 @main
 struct SwiftUIThingsILikeApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
-    var appCoordinator: AppCoordinator {
+    @ObservedObject private var appCoordinator: AppCoordinator = {
         let window = UIWindow(frame: UIScreen.main.bounds)
-        appDelegate.window = window
-        
-        let tabBarCoordinator = TabBarCoordinator(window: window)
-        let coordinator = AppCoordinator(window: window, tabBarCoordinator: tabBarCoordinator)
+        let tabBarFactory = TabBarViewFactory()
+        let tabBarCoordinator = TabBarCoordinator(tabBarFactory: tabBarFactory)
+        let tabBarRouter = TabBarRouter(tabBarCoordinator: tabBarCoordinator)
+        let coordinator = AppCoordinator(router: tabBarRouter)
         coordinator.start()
-        
         return coordinator
-    }
+    }()
 
     var body: some Scene {
         WindowGroup {
@@ -30,6 +28,7 @@ struct SwiftUIThingsILikeApp: App {
         }
     }
 }
+
 
 
 

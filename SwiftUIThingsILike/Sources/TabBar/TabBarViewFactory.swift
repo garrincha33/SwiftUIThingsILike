@@ -7,16 +7,11 @@
 
 import SwiftUI
 
-protocol TabBarViewFactoryType {
-    associatedtype TabBarView: View
-    func make() -> TabBarView
-}
-
 struct TabBarViewFactory: TabBarViewFactoryType {
     func make() -> some View {
         TabView {
             ForEach(Topic.allCases, id: \.self) { topic in
-                TopicViewFactory().make(topic: topic)
+                TopicView(topic: topic)
                     .tabItem {
                         Text(topic.rawValue)
                     }
@@ -24,3 +19,5 @@ struct TabBarViewFactory: TabBarViewFactoryType {
         }
     }
 }
+
+
