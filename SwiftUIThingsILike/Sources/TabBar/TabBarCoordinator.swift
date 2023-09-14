@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 class TabBarCoordinator<Factory: TabBarViewFactoryType>: TabBarCoordinatorType {
     private let tabBarFactory: Factory
 

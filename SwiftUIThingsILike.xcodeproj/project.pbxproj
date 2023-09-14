@@ -23,6 +23,7 @@
 		823DCC192AB3891A00C03EBA /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC182AB3891A00C03EBA /* CoordinatorType.swift */; };
 		823DCC1B2AB3893700C03EBA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC1A2AB3893700C03EBA /* AppCoordinator.swift */; };
 		823DCC1D2AB389E100C03EBA /* TabBarViewFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC1C2AB389E100C03EBA /* TabBarViewFactoryType.swift */; };
+		823DCC202AB3906C00C03EBA /* CoordinatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC1F2AB3906C00C03EBA /* CoordinatorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		823DCC182AB3891A00C03EBA /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
 		823DCC1A2AB3893700C03EBA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		823DCC1C2AB389E100C03EBA /* TabBarViewFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewFactoryType.swift; sourceTree = "<group>"; };
+		823DCC1F2AB3906C00C03EBA /* CoordinatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				823DCC1A2AB3893700C03EBA /* AppCoordinator.swift */,
 				823DCC182AB3891A00C03EBA /* CoordinatorType.swift */,
+				823DCC1F2AB3906C00C03EBA /* CoordinatorManager.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				823DCC1D2AB389E100C03EBA /* TabBarViewFactoryType.swift in Sources */,
 				823DCC052AB33F2000C03EBA /* TopicViewFactory.swift in Sources */,
 				823DCC0E2AB3414800C03EBA /* SceneDelegate.swift in Sources */,
+				823DCC202AB3906C00C03EBA /* CoordinatorManager.swift in Sources */,
 				823DCC0C2AB3413200C03EBA /* AppDelegate.swift in Sources */,
 				823DCBFC2AB337F300C03EBA /* TabBarCoordinator.swift in Sources */,
 			);
