@@ -24,6 +24,10 @@
 		823DCC1B2AB3893700C03EBA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC1A2AB3893700C03EBA /* AppCoordinator.swift */; };
 		823DCC1D2AB389E100C03EBA /* TabBarViewFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC1C2AB389E100C03EBA /* TabBarViewFactoryType.swift */; };
 		823DCC202AB3906C00C03EBA /* CoordinatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC1F2AB3906C00C03EBA /* CoordinatorManager.swift */; };
+		823DCC222AB3938200C03EBA /* TopicContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC212AB3938200C03EBA /* TopicContent.swift */; };
+		823DCC242AB393C000C03EBA /* TopicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC232AB393C000C03EBA /* TopicContentView.swift */; };
+		823DCC262AB393D700C03EBA /* TopicScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC252AB393D700C03EBA /* TopicScrollView.swift */; };
+		823DCC282AB393F500C03EBA /* TopicScrollViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC272AB393F500C03EBA /* TopicScrollViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,10 @@
 		823DCC1A2AB3893700C03EBA /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		823DCC1C2AB389E100C03EBA /* TabBarViewFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewFactoryType.swift; sourceTree = "<group>"; };
 		823DCC1F2AB3906C00C03EBA /* CoordinatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorManager.swift; sourceTree = "<group>"; };
+		823DCC212AB3938200C03EBA /* TopicContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicContent.swift; sourceTree = "<group>"; };
+		823DCC232AB393C000C03EBA /* TopicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicContentView.swift; sourceTree = "<group>"; };
+		823DCC252AB393D700C03EBA /* TopicScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicScrollView.swift; sourceTree = "<group>"; };
+		823DCC272AB393F500C03EBA /* TopicScrollViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicScrollViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,10 @@
 				823DCC042AB33F2000C03EBA /* TopicViewFactory.swift */,
 				823DCC062AB33F3700C03EBA /* TopicView.swift */,
 				823DCC082AB33F4700C03EBA /* Topic.swift */,
+				823DCC212AB3938200C03EBA /* TopicContent.swift */,
+				823DCC232AB393C000C03EBA /* TopicContentView.swift */,
+				823DCC252AB393D700C03EBA /* TopicScrollView.swift */,
+				823DCC272AB393F500C03EBA /* TopicScrollViewFactory.swift */,
 			);
 			path = Topic;
 			sourceTree = "<group>";
@@ -231,14 +243,18 @@
 				823DCC112AB3842700C03EBA /* RouterType.swift in Sources */,
 				823DCC002AB33C6800C03EBA /* TabBarViewFactory.swift in Sources */,
 				823DCBEC2AB331F700C03EBA /* SwiftUIThingsILikeApp.swift in Sources */,
+				823DCC222AB3938200C03EBA /* TopicContent.swift in Sources */,
+				823DCC242AB393C000C03EBA /* TopicContentView.swift in Sources */,
 				823DCC072AB33F3700C03EBA /* TopicView.swift in Sources */,
 				823DCC132AB3844000C03EBA /* TabBarRouter.swift in Sources */,
 				823DCC1D2AB389E100C03EBA /* TabBarViewFactoryType.swift in Sources */,
 				823DCC052AB33F2000C03EBA /* TopicViewFactory.swift in Sources */,
+				823DCC262AB393D700C03EBA /* TopicScrollView.swift in Sources */,
 				823DCC0E2AB3414800C03EBA /* SceneDelegate.swift in Sources */,
 				823DCC202AB3906C00C03EBA /* CoordinatorManager.swift in Sources */,
 				823DCC0C2AB3413200C03EBA /* AppDelegate.swift in Sources */,
 				823DCBFC2AB337F300C03EBA /* TabBarCoordinator.swift in Sources */,
+				823DCC282AB393F500C03EBA /* TopicScrollViewFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
