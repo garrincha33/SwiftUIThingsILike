@@ -28,6 +28,9 @@
 		823DCC242AB393C000C03EBA /* TopicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC232AB393C000C03EBA /* TopicContentView.swift */; };
 		823DCC262AB393D700C03EBA /* TopicScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC252AB393D700C03EBA /* TopicScrollView.swift */; };
 		823DCC282AB393F500C03EBA /* TopicScrollViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC272AB393F500C03EBA /* TopicScrollViewFactory.swift */; };
+		823DCC2B2AB43B7600C03EBA /* HeaderWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC2A2AB43B7600C03EBA /* HeaderWidget.swift */; };
+		823DCC2D2AB43BC900C03EBA /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC2C2AB43BC900C03EBA /* Widget.swift */; };
+		823DCC2F2AB43CA100C03EBA /* WidgetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCC2E2AB43CA100C03EBA /* WidgetFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		823DCC232AB393C000C03EBA /* TopicContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicContentView.swift; sourceTree = "<group>"; };
 		823DCC252AB393D700C03EBA /* TopicScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicScrollView.swift; sourceTree = "<group>"; };
 		823DCC272AB393F500C03EBA /* TopicScrollViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicScrollViewFactory.swift; sourceTree = "<group>"; };
+		823DCC2A2AB43B7600C03EBA /* HeaderWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWidget.swift; sourceTree = "<group>"; };
+		823DCC2C2AB43BC900C03EBA /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		823DCC2E2AB43CA100C03EBA /* WidgetFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		823DCBF92AB3321500C03EBA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				823DCC292AB43B6400C03EBA /* Widget */,
 				823DCC1E2AB38D6000C03EBA /* Coordinators */,
 				823DCC0F2AB3840F00C03EBA /* Router */,
 				823DCC032AB33F1100C03EBA /* Topic */,
@@ -118,8 +125,8 @@
 			children = (
 				823DCBFD2AB33B4D00C03EBA /* TabBarCoordinatorType.swift */,
 				823DCBFB2AB337F300C03EBA /* TabBarCoordinator.swift */,
-				823DCC1C2AB389E100C03EBA /* TabBarViewFactoryType.swift */,
 				823DCC122AB3844000C03EBA /* TabBarRouter.swift */,
+				823DCC1C2AB389E100C03EBA /* TabBarViewFactoryType.swift */,
 				823DCBFF2AB33C6800C03EBA /* TabBarViewFactory.swift */,
 			);
 			path = TabBar;
@@ -133,8 +140,8 @@
 				823DCC082AB33F4700C03EBA /* Topic.swift */,
 				823DCC212AB3938200C03EBA /* TopicContent.swift */,
 				823DCC232AB393C000C03EBA /* TopicContentView.swift */,
-				823DCC252AB393D700C03EBA /* TopicScrollView.swift */,
 				823DCC272AB393F500C03EBA /* TopicScrollViewFactory.swift */,
+				823DCC252AB393D700C03EBA /* TopicScrollView.swift */,
 			);
 			path = Topic;
 			sourceTree = "<group>";
@@ -164,6 +171,16 @@
 				823DCC1F2AB3906C00C03EBA /* CoordinatorManager.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		823DCC292AB43B6400C03EBA /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				823DCC2C2AB43BC900C03EBA /* Widget.swift */,
+				823DCC2A2AB43B7600C03EBA /* HeaderWidget.swift */,
+				823DCC2E2AB43CA100C03EBA /* WidgetFactory.swift */,
+			);
+			path = Widget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,11 +267,14 @@
 				823DCC1D2AB389E100C03EBA /* TabBarViewFactoryType.swift in Sources */,
 				823DCC052AB33F2000C03EBA /* TopicViewFactory.swift in Sources */,
 				823DCC262AB393D700C03EBA /* TopicScrollView.swift in Sources */,
+				823DCC2B2AB43B7600C03EBA /* HeaderWidget.swift in Sources */,
 				823DCC0E2AB3414800C03EBA /* SceneDelegate.swift in Sources */,
 				823DCC202AB3906C00C03EBA /* CoordinatorManager.swift in Sources */,
 				823DCC0C2AB3413200C03EBA /* AppDelegate.swift in Sources */,
+				823DCC2F2AB43CA100C03EBA /* WidgetFactory.swift in Sources */,
 				823DCBFC2AB337F300C03EBA /* TabBarCoordinator.swift in Sources */,
 				823DCC282AB393F500C03EBA /* TopicScrollViewFactory.swift in Sources */,
+				823DCC2D2AB43BC900C03EBA /* Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

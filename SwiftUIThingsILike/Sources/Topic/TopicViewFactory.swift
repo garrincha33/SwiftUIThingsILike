@@ -13,8 +13,9 @@ protocol TopicViewFactoryType {
 
 struct TopicViewFactory: TopicViewFactoryType {
     func make(topic: Topic) -> AnyView {
-        let topicScrollViewFactory = TopicScrollViewFactory()
-        return topicScrollViewFactory.make(topic: topic)
+        let widgetFactory = DefaultWidgetFactory()
+        return AnyView(TopicView(topic: topic, widgetFactory: widgetFactory))
     }
 }
+
 
