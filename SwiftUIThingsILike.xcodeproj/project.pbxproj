@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82134E542ABA348400C831E2 /* CreateHeaderWidgetUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82134E532ABA348400C831E2 /* CreateHeaderWidgetUseCase.swift */; };
 		823DCBEC2AB331F700C03EBA /* SwiftUIThingsILikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823DCBEB2AB331F700C03EBA /* SwiftUIThingsILikeApp.swift */; };
 		823DCBF02AB331F700C03EBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823DCBEF2AB331F700C03EBA /* Assets.xcassets */; };
 		823DCBF32AB331F700C03EBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823DCBF22AB331F700C03EBA /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82134E532ABA348400C831E2 /* CreateHeaderWidgetUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHeaderWidgetUseCase.swift; sourceTree = "<group>"; };
 		823DCBE82AB331F700C03EBA /* SwiftUIThingsILike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIThingsILike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		823DCBEB2AB331F700C03EBA /* SwiftUIThingsILikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIThingsILikeApp.swift; sourceTree = "<group>"; };
 		823DCBEF2AB331F700C03EBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,9 +137,9 @@
 		823DCC032AB33F1100C03EBA /* Topic */ = {
 			isa = PBXGroup;
 			children = (
+				823DCC082AB33F4700C03EBA /* Topic.swift */,
 				823DCC042AB33F2000C03EBA /* TopicViewFactory.swift */,
 				823DCC062AB33F3700C03EBA /* TopicView.swift */,
-				823DCC082AB33F4700C03EBA /* Topic.swift */,
 				823DCC212AB3938200C03EBA /* TopicContent.swift */,
 				823DCC232AB393C000C03EBA /* TopicContentView.swift */,
 				823DCC272AB393F500C03EBA /* TopicScrollViewFactory.swift */,
@@ -166,8 +168,8 @@
 		823DCC1E2AB38D6000C03EBA /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				823DCC1A2AB3893700C03EBA /* AppCoordinator.swift */,
 				823DCC182AB3891A00C03EBA /* CoordinatorType.swift */,
+				823DCC1A2AB3893700C03EBA /* AppCoordinator.swift */,
 				823DCC1F2AB3906C00C03EBA /* CoordinatorManager.swift */,
 			);
 			path = Coordinators;
@@ -179,6 +181,7 @@
 				823DCC2C2AB43BC900C03EBA /* Widget.swift */,
 				823DCC2A2AB43B7600C03EBA /* HeaderWidget.swift */,
 				823DCC2E2AB43CA100C03EBA /* WidgetFactory.swift */,
+				82134E532ABA348400C831E2 /* CreateHeaderWidgetUseCase.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				823DCC1B2AB3893700C03EBA /* AppCoordinator.swift in Sources */,
 				823DCC192AB3891A00C03EBA /* CoordinatorType.swift in Sources */,
 				823DCC112AB3842700C03EBA /* RouterType.swift in Sources */,
+				82134E542ABA348400C831E2 /* CreateHeaderWidgetUseCase.swift in Sources */,
 				823DCC002AB33C6800C03EBA /* TabBarViewFactory.swift in Sources */,
 				823DCBEC2AB331F700C03EBA /* SwiftUIThingsILikeApp.swift in Sources */,
 				823DCC222AB3938200C03EBA /* TopicContent.swift in Sources */,

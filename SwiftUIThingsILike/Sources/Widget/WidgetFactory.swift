@@ -8,13 +8,18 @@
 import SwiftUI
 
 protocol WidgetFactory {
+    var createHeaderWidgetUseCase: CreateHeaderWidgetUseCase { get }
     func makeHeaderWidget(for topic: Topic) -> AnyView
 }
 
-struct DefaultWidgetFactory: WidgetFactory {
+extension WidgetFactory {
     func makeHeaderWidget(for topic: Topic) -> AnyView {
-        let viewModel = HeaderViewModel(title: topic.rawValue, subtitle: "All about \(topic.rawValue)")
-        return AnyView(HeaderWidget(viewModel: viewModel))
+        return createHeaderWidgetUseCase.execute(for: topic)
     }
 }
+
+struct DefaultWidgetFactory: WidgetFactory {
+    let createHeaderWidgetUseCase: CreateHeaderWidgetUseCase = DefaultCreateHeaderWidgetUseCase()
+}
+
 
